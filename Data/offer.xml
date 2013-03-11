@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<suggests>
+  <suggest name="test" email="test@test.com" content="test" ip="127.0.0.1" />
+  <suggest name="test" email="test@test.com" content="test" ip="127.0.0.1" />
+  <suggest name="test" email="test@test.com" content="test" ip="127.0.0.1" />
+  <suggest name="test" email="test@nsid.com" content="test" ip="127.0.0.1" />
+  <suggest name="fsda" email="asdf@qq.com" content="&lt;scprit&gt;alert(&quot;Just joky&quot;)&lt;/script&gt;" ip="59.53.245.103" />
+  <suggest name="212" email="212@212.com" content="21`2" ip="218.18.17.4" />
+</suggests>

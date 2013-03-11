@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<regs>
+  <reg title="匹配链接及样式中的图片" description="" match="匹配链接及样式中的图片" unmatch="" author="kingshang" date="2010-05-31 16:57:38" exp="(?&lt;==&quot;?|\()[^\s\&quot;\'\)\(]+(?:\.jpg|\.gif|\.png)[^\s\&quot;\'\)]*" />
+   <reg title="单词" description="" match="单词" unmatch="" author="kingshang" date="2010-01-28 11:22:21" exp="\w+" />
+  <reg title="链接" description="" match="链接" unmatch="" author="kingshang" date="2010-01-20 18:43:43" exp="&lt;a[^&gt;]*href=\&quot;(?&lt;link&gt;[^&gt;]*)\&quot;[^&gt;]*&gt;(?&lt;title&gt;.*)&lt;/a&gt;" />
+  <reg title="中文字符" description="中文字符" match="" unmatch="" author="" date="" exp="[\u4e00-\u9fa5]">
+  </reg>
+  <reg title="双字节字符" description="双字节字符" match="" unmatch="" author="" date="" exp="[^\x00-\xff]">
+  </reg>
+  <reg title="空行" description="空行" match="" unmatch="" author="" date="" exp="\n[\s| ]*\r">
+  </reg>
+  <reg title="首尾空格" description="首尾空格" match="" unmatch="" author="" date="" exp="(^\s*)|(\s*$)">
+  </reg>
+</regs>

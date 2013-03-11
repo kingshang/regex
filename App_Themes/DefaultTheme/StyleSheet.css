@@ -1,0 +1,300 @@
+﻿/*整体框架*/
+body
+{
+    margin: 0 auto;
+    font-size: 12px;
+}
+input
+{
+    font-size: 12px;
+}
+div.header
+{
+    width: 100%;
+    height: 80px;
+    background-color: #f1ffdb;
+}
+div.leftheader
+{
+    float: left;
+    display: block;
+    font-size: 48px;
+    line-height: 80px;
+    font-family: 华文行楷;
+}
+div.rightheader
+{
+    float: right;
+    display: block;
+    padding: 10px;
+}
+div.footer
+{
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    text-align: right;
+}
+a.footer
+{
+    color: black;
+    text-decoration: none;
+}
+div.copyright
+{
+    text-align:center;
+    margin-right: 20px;
+    font-family: Courier New;
+}
+
+div.topmenu
+{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: right;
+    background-color: #8fc332;
+}
+a.topmenuitem
+{
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+a.topmenuitem:hover
+{
+    color: #ffffff;
+    text-decoration: underline;
+    margin-right: 10px;
+}
+a.topmenuitem:active
+{
+    color: red;
+    text-decoration: underline;
+    margin-right: 10px;
+}
+
+div.leftmenu
+{
+    width: 15%;
+    min-height: 480px;
+    background-color: #f5f5f5;
+    float: left;
+}
+div.container
+{
+    width: 100%;
+    background-color: #ffffff;
+    vertical-align: top;
+    min-height: 480px;
+}
+div.username
+{
+}
+
+/*测试*/
+
+div.content
+{
+    width: 85%;
+    min-width: 800px;
+    float: left;
+}
+div.option
+{
+    border-left-style: dashed;
+    border-left-width: 1px;
+    border-left-color: #dceafc;
+    position: absolute;
+    text-align: left;
+    top: 80px;
+    right: 0px;
+    width: 220px;
+    background-color: #ffffff;
+    height: 100%;
+    font-size: small;
+    display: none;
+}
+div.panel
+{
+    width: 100%;
+}
+
+div.source
+{
+    width: 100%;
+    background-color: #ffffff;
+    border: solid 1px #efefec;
+    overflow: visible;
+}
+div.html
+{
+    width: 100%;
+    background-color: #ffffff;
+    min-height: 300px;
+    overflow: scroll;
+    border: solid 1px #efefec;
+    display: none;
+}
+div.textresult
+{
+    width: 100%;
+    background-color: #ffffff;
+    border: solid 1px #efefec;
+    display: none;
+    overflow: visible;
+}
+textarea.in
+{
+    min-height: 300px;
+    width: 100%;
+}
+textarea.textresult
+{
+    width: 100%;
+    min-height: 300px;
+}
+textarea.pattern
+{
+    width: 98%;
+    height: 80px;
+}
+input.replace
+{
+    width: 650px;
+}
+div.pattern
+{
+    padding-top: 5px;
+}
+div.replace
+{
+    padding-top: 5px;
+}
+div.in
+{
+    padding-top: 5px;
+}
+div.button
+{
+    line-height: 30px;
+    height: 30px;
+}
+
+input.button
+{
+    margin-right: 10px;
+}
+input.url
+{
+    width: 380px;
+    font-family: Courier New;
+}
+div.title
+{
+    background-color: #dceafc;
+    font-weight: bold;
+    line-height: 30px;
+    height: 30px;
+    text-align: center;
+}
+ul.list
+{
+    margin: 0px;
+    list-style-type: none;
+}
+li.item
+{
+    margin: 0px;
+}
+select.matches
+{
+    width: 200px;
+    height: 360px;
+}
+div.status
+{
+    display: block;
+    line-height: 30px;
+    background-color: white;
+    height: 30px;
+    width: 100%;
+    text-indent: 20px;
+    color: Black;
+}
+
+div.savedialog
+{
+    width: 100%;
+    height: 100%;
+    display: none;
+    background-color: #dcdcdc;
+    border: solid 1 #dcdcdc;
+}
+div.logindialog
+{
+    width: 100%;
+    height: 100%;
+    display: none;
+    background-color: #dcdcdc;
+    border: solid 1 #dcdcdc;
+}
+
+span.label
+{
+    width: 80px;
+    text-align: right;
+    font-weight:bold;
+    display:inline-block;
+}
+
+
+
+
+
+
+/*用户注册*/
+
+input.register
+{
+}
+div.line
+{
+    line-height: 30px;
+    min-height: 30px;
+}
+
+input.email
+{
+    width: 300px;
+}
+input.name
+{
+    width: 300px;
+}
+input.password
+{
+    width: 150px;
+}
+
+ul.error
+{
+    color: Red;
+}
+
+li.errorline
+{
+}
+
+/*建议与BUG*/
+textarea.content
+{
+    width: 300px;
+    height: 100px;
+}
+p.paragraph
+{
+    font-size: 14px;
+}
+
