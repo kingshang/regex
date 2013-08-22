@@ -1,9 +1,9 @@
-<%@ Page Language="C#" MasterPageFile="~/main.master" AutoEventWireup="true" CodeFile="Useful.aspx.cs"
-    Inherits="Useful" Title="³£ÓÃÕıÔò±í´ïÊ½"  %>
+ï»¿<%@ Page Language="C#" MasterPageFile="~/main.master" AutoEventWireup="true" CodeFile="Useful.aspx.cs"
+    Inherits="Useful" Title="å¸¸ç”¨æ­£åˆ™è¡¨è¾¾å¼"  %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <div align="right" style="height: 30px; line-height: 30px;">
-        <a href="AddExpression.aspx" style="width: 100%">Ìí¼Ó</a></div>
+        <a href="AddExpression.aspx" style="width: 100%">æ·»åŠ </a></div>
     <asp:ListView ID="lv" runat="server" DataSourceID="XmlDataSource1" Style="margin-right: 0px"
         GroupItemCount="1">
         <LayoutTemplate>
@@ -23,19 +23,19 @@
 
                 <ul style="list-style-type: none; border-top: dashed 1px #cccccc; padding: 3px; width: 100%;
                     line-height: 25px;">
-                    <li>±ê&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ìâ£º<asp:Literal ID="Literal1"
+                    <li>æ ‡&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;é¢˜ï¼š<asp:Literal ID="Literal1"
                         runat="server" Text='<%# Eval("title") %>'></asp:Literal>
-                        <a href='Default.aspx?idx=<%# Container.DataItemIndex %>' style="padding-left: 10px;">²âÊÔ</a></li>
-                    <li>Ãè&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Êö£º<asp:Literal ID="Literal2"
+                        <a href='Default.aspx?idx=<%# Container.DataItemIndex %>' style="padding-left: 10px;">æµ‹è¯•</a></li>
+                    <li>æ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;è¿°ï¼š<asp:Literal ID="Literal2"
                         runat="server" Text='<%# Eval("description") %>'></asp:Literal></li>
-                    <li>±í&nbsp;&nbsp;´ï&nbsp;&nbsp;Ê½£º<asp:Literal ID="Literal3" Mode="Encode" runat="server"
+                    <li>è¡¨&nbsp;&nbsp;è¾¾&nbsp;&nbsp;å¼ï¼š<asp:Literal ID="Literal3" Mode="Encode" runat="server"
                         Text='<%# Eval("exp") %>'></asp:Literal></li>
-                    <li>Æ¥&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Åä£º<asp:Literal ID="Literal4"
+                    <li>åŒ¹&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;é…ï¼š<asp:Literal ID="Literal4"
                         runat="server" Text='<%# Eval("match") %>'></asp:Literal></li>
-                    <li>²»&nbsp;&nbsp;Æ¥&nbsp;&nbsp;Åä£º<asp:Literal ID="Literal5" runat="server" Text='<%# Eval("unmatch") %>'></asp:Literal></li>
-                    <li>×÷&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Õß£º<asp:Literal ID="Literal6"
+                    <li>ä¸&nbsp;&nbsp;åŒ¹&nbsp;&nbsp;é…ï¼š<asp:Literal ID="Literal5" runat="server" Text='<%# Eval("unmatch") %>'></asp:Literal></li>
+                    <li>ä½œ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;è€…ï¼š<asp:Literal ID="Literal6"
                         runat="server" Text='<%# Eval("author") %>'></asp:Literal></li>
-                    <li>¸üĞÂÊ±¼ä£º<asp:Literal ID="Literal7" runat="server" Text='<%# Eval("date") %>'></asp:Literal></li>
+                    <li>æ›´æ–°æ—¶é—´ï¼š<asp:Literal ID="Literal7" runat="server" Text='<%# Eval("date") %>'></asp:Literal></li>
                 </ul>
 
             </td>
@@ -45,7 +45,7 @@
         <Fields>
             <asp:TemplatePagerField>
                 <PagerTemplate>
-                    <asp:Label ID="Label1" runat="server" Text=' <%# "¹² " + Container.TotalRowCount +" Ìõ¼ÇÂ¼ µ±Ç°µÚ "  +(Container.StartRowIndex/Container.PageSize+1)+   "/" + (System.Math.Ceiling(1.0*Container.TotalRowCount/Container.PageSize)) +" Ò³" %> '>
+                    <asp:Label ID="Label1" runat="server" Text=' <%# "å…± " + Container.TotalRowCount +" æ¡è®°å½• å½“å‰ç¬¬ "  +(Container.StartRowIndex/Container.PageSize+1)+   "/" + (System.Math.Ceiling(1.0*Container.TotalRowCount/Container.PageSize)) +" é¡µ" %> '>
                     </asp:Label>
                 </PagerTemplate>
             </asp:TemplatePagerField>
