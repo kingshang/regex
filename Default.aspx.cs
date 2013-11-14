@@ -1,20 +1,11 @@
 ﻿using System;
-using System.Data;
-using System.Configuration;
-using System.Collections;
-using System.Web;
-using System.Web.Security;
-using System.Web.UI;
-using System.Web.UI.WebControls;
-using System.Web.UI.WebControls.WebParts;
-using System.Web.UI.HtmlControls;
 using System.Text.RegularExpressions;
 using AjaxPro;
 using System.Text;
 using System.Data.Common;
-using Microsoft.Practices.EnterpriseLibrary.Common;
+
 using Microsoft.Practices.EnterpriseLibrary.Data;
-using Kingshang.RegexTool.Coact;
+
 using System.Xml;
 
 public partial class HomePage : System.Web.UI.Page
@@ -112,17 +103,5 @@ public partial class HomePage : System.Web.UI.Page
         }
         Regex reg = new Regex(pattern, options);
         return string.Join("~$|$~", reg.Split(input));
-    }
-
-    [AjaxMethod]
-    public string SaveRegex(string title, string description, string pattern, string replace, string tags)
-    {
-        tags = tags.Replace(" ", ",");
-        Database db = DatabaseFactory.CreateDatabase();
-        using (DbCommand cmd = db.GetStoredProcCommand("Regexs_Insert", new object[] { CUser.CurrentUserName, title, description, pattern, replace, tags }))
-        {
-            db.ExecuteNonQuery(cmd);
-            return cmd.Parameters["@RETURN_VALUE"].Value.ToString();
-        }
     }
 }

@@ -1,13 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
+
 using AjaxPro;
-using System.Text.RegularExpressions;
-using System.Data.Common;
-using Microsoft.Practices.EnterpriseLibrary.Common;
-using Microsoft.Practices.EnterpriseLibrary.Data;
+
 using System.Xml;
 using System.IO;
 

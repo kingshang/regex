@@ -49,14 +49,6 @@
         </script>
 
         <script type="text/javascript">
-            function hideIt() {
-                if (document.getElementById("hid").innerHTML != "")
-                    document.getElementById("hid").innerHTML = "";
-                setTimeout("hideIt()", 100); // after 0.1 sec
-
-            }
-            setTimeout("hideIt()", 100); // after 0.1 sec
-
             try {
                 _uacct = "UA-1984963-2";
                 urchinTracker();
